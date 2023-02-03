@@ -7,6 +7,13 @@ Estructura de datos
 
 #Ejercicio 1
 
+### Funcion: verificarDiagonales
+### Entrada: Matriz cuadrada con numeros enteros
+### Salida: Valor booleano
+### Proposito: Determinar si la diagonal mayor y menor de una matriz cuadrada son iguales
+
+
+
 def verificarDiagonales(mat):
 	flag = True
 	i = 0
@@ -19,7 +26,13 @@ def verificarDiagonales(mat):
 			flag = False
 	return flag
 
+
 #Ejercicio 2
+
+### Funcion: esCapicua
+### Entrada: Lista con numeros enteros
+### Salida: valor booleano
+### Proposito: Determinar si la lista se lee igual en ambos sentidos
 
 def esCapicua(lista):
 	i = 0
@@ -34,7 +47,14 @@ def esCapicua(lista):
 	return flag
 
 
+
 #Ejercicio 3
+
+### Funcion: diferenciaListas
+### Entrada: 2 listas(listaA, listaB), cada una contiene numeros enteros
+### Salida: lista con numeros enteros
+### Proposito: retornar una lista con numeros enteros que son la diferencia entre la listaA y listaB
+
 
 #a
 
@@ -49,6 +69,11 @@ def diferenciaListas(listaA, listaB):
 
 
 #b
+
+### Funcion: leerImprimir
+### Entrada:
+### Salida:
+### Proposito: leer los datos ingresados e imprimirlos segun los lineamientos del problema
 
 def leerImprimir():
 	itera = int(input())
@@ -74,6 +99,13 @@ def leerImprimir():
 
 # Ejercicio 4
 
+
+### Funcion: primos
+### Entrada: numero entero
+### Salida: lista con numeros enteros
+### Proposito: determinar los numeros primos en el rango de numeros de entrada
+
+
 def primos(numero):
 	ans = []
 	for num in range(2, numero +1):
@@ -92,6 +124,11 @@ def primos(numero):
 		if cnt == 1:
 			ans.append(num)
 	return ans
+
+### Funcion: sumaPrimos
+### Entrada: lista de numeros enteros
+### Salida: lista con numeros enteros
+### Proposito: determinar si la suma de los digitos de la lista de entrada es prima
 
 def sumaPrimos(primo):
 	ans = []
@@ -113,6 +150,11 @@ def sumaPrimos(primo):
 			ans.append(int(numero))
 	return ans
 
+### Funcion: mostrarPrimos
+### Entrada: numero entero
+### Salida: 
+### Proposito: imprimir segun los lineamientos especificados en el problema los numeros
+
 def mostrarPrimos(numero):
 	primo = primos(numero)
 	primoSumados = sumaPrimos(primo)
@@ -133,6 +175,11 @@ def mostrarPrimos(numero):
 
 
 #Ejercicio 5
+
+### Funcion: sumarvaloresMatriz
+### Entrada: diccionario y matriz
+### Salida: numero entero
+### Proposito: determinar segun la clave y la posicion en el diccionario la suma de los valores que se encuentran segun la lista
 
 def sumarValoresMatriz(disp, mat):
 	cnt = 0
